@@ -122,6 +122,7 @@ body{
 .description{
     font-size: 16px;
     color: #404040;
+    margin-bottom: 50px;
 }
 
 .about-me-btn{
@@ -240,6 +241,7 @@ body{
     border-radius: 5px;
     font-weight: 600;
     cursor: pointer;
+    text-decoration: none;
 }
 
 
@@ -251,8 +253,11 @@ body{
     justify-content: center;
     margin-top: 20px;
     /* border: 1px solid ; */
-     overflow-wrap: normal;
+      
      flex-wrap: wrap;
+     z-index: 10;
+     
+     
 }
 
 .tech-brand {
@@ -268,7 +273,7 @@ body{
     justify-content: center;
     flex-direction: column;
     overflow-x: hidden;
-    
+    z-index: 100;
 }
 
 /* .q-container{
@@ -286,6 +291,7 @@ body{
     /* position: relative;
     bottom:100px; */
     margin-top: 50px;
+    z-index: 1;
 }
 
 .sub-title-q{
@@ -295,6 +301,7 @@ body{
     font-weight: 400 ;
     color:#333333;
     margin-bottom: 50px;
+    z-index: 1;
 }
 
 
@@ -359,6 +366,7 @@ body{
     flex-direction: column;
    justify-content: center;
      padding: 50px ;
+     align-items: center;
     
 }
 
@@ -470,6 +478,7 @@ textarea{
 
   #qualifications{
     margin-top:700px;
+    z-index: 100;
   }
   
   .social-links{
@@ -506,8 +515,54 @@ textarea{
     width: 300px;
     margin:10px auto;
   }
+  .note{
+    width: auto;
+  }
   }
 
 
 
   
+  @media only screen and (max-width: 400px){
+    .hero-image{
+        
+        margin: auto;
+    }
+    #hero{
+        margin-bottom: 50px;
+    }
+
+    .hero-body{
+        margin-top: 200px;
+    }
+
+    .canvas{
+        left: 40px;
+        width: auto;
+    }
+    .about-title{
+        margin-top: 100px;
+    }
+       
+    
+      .swiper {
+        width: 300px;
+        height: 200px;
+      }
+      .note{
+        width: auto;
+      }
+ 
+      .q-title{
+        margin-top: 150px;
+      }
+
+      .tech-brand:last-child{
+        display: none;
+      }
+        .input-text{
+            width: 300px;
+            margin:10px auto;
+          }
+ 
+  }
