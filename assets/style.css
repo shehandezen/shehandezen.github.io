@@ -559,7 +559,9 @@ textarea{
         margin-top: 150px;
       }
 
-     
+      .tech-brand:last-child{
+        display: none;
+      }
         .input-text{
             width: 300px;
             margin:10px auto;
